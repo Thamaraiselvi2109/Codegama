@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { RiMenu2Fill, RiCloseFill } from 'react-icons/ri';
 import ReactDOM from 'react-dom';
-import logo from '../assets/LOGO.png';
+import logo from '../assets/logo.png';
 import '../styles/hero.scss';
 
 type ModalNavbarProps = {
@@ -48,7 +48,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
     return (
         <div className="container">
             <div className="navbar">
-                <img src={logo} alt="logo" className="logo" />
+                <img src={logo} alt="logo"/>
                 <button className="menu-button" onClick={toggleMenu}>
                     {isOpen ? <RiCloseFill size={25} /> : <RiMenu2Fill size={25} />}
                 </button>
