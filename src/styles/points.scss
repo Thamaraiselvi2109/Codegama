@@ -1,0 +1,69 @@
+
+// Points css starts here
+.points-container{
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+.points-container div:nth-child(1), .points-container div:nth-child(2){
+    border-right: 2px dotted transparent; /* Base border */
+    border-image: repeating-linear-gradient(
+        to bottom,
+        rgba(129, 129, 129, 0.74),
+        rgba(129, 129, 129, 0.74) 4px,
+        transparent 6px,
+        transparent 10px
+    ) 1;
+}
+.points-container div{
+    width: 30%;
+    padding: 30px;
+    background: url(../assets/bg-blur.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size:contain 
+}
+.points-container p{
+    font-size: 16px;
+}
+
+@media (max-width: 1080px) {
+    .points-container div{
+        padding: 20px;
+    }
+}
+//ends here
+
+
+// media query for mobile starts here
+@media (max-width: 450px) {
+    .points-container{
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    .points-container div{
+        width: 100%;
+        padding: 0px;
+        padding: 30px 0px;
+    }
+    .points-container div:nth-child(1), .points-container div:nth-child(2){
+        border-right: 0px dotted transparent; /* Base border */
+        border-image: repeating-linear-gradient(
+            to bottom,
+            rgba(129, 129, 129, 0.74),
+            rgba(129, 129, 129, 0.74) 0px,
+            transparent 0px,
+            transparent 0px
+        ) 1;
+        border-bottom: 3px dotted transparent; /* Base border */
+        border-image: repeating-linear-gradient(
+            to right, /* Change direction to bottom */
+            rgba(129, 129, 129, 0.74),
+            rgba(129, 129, 129, 0.74) 3px, /* Dot size */
+            transparent 6px, /* Space between dots */
+            transparent 10px /* Total gap */
+        ) 1;
+    }
+}
+// ends here
+

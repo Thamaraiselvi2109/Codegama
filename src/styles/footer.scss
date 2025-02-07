@@ -1,0 +1,89 @@
+.footer {
+    background: url(../assets/footer_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    p {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .footer-container {
+        padding: 50px 20px 10px 20px;
+
+        .description {
+            padding: 50px 0px;
+            display: flex;
+            gap: 50px;
+
+            .socials_cont {
+                padding-right: 70px;
+                border-right: 2px dotted transparent;
+                border-image: repeating-linear-gradient(to bottom,
+                        rgba(129, 129, 129, 0.74),
+                        rgba(129, 129, 129, 0.74) 4px,
+                        transparent 6px,
+                        transparent 10px) 1;
+
+                .socials {
+                    display: flex;
+                    gap: 10px;
+
+                    div {
+                        background-color: rgb(46, 46, 46);
+                        padding: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 5px;
+                    }
+                }
+            }
+
+            .apps {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 0px 30px;
+
+                h4 {
+                    margin: 0px;
+                }
+
+                img {
+                    width: 250px;
+                }
+            }
+        }
+
+        .copyright {
+            display: flex;
+            justify-content: space-between;
+
+        }
+    }
+}
+
+
+@media (max-width: 450px) {
+    .footer{
+        .footer-container{
+            .description {
+                flex-direction: column;
+                padding: 30px 0px;
+                .socials_cont{
+                    padding: 0%;
+                    border-right: 0px dotted transparent!important;
+                    border-image: repeating-linear-gradient(to bottom,
+                                rgba(129, 129, 129, 0),
+                                rgba(129, 129, 129, 0) 0px,
+                                transparent 0px,
+                                transparent 0px) 0;
+                }
+                .apps{
+                    padding: 0px;
+                }
+            }
+        }
+    }
+}

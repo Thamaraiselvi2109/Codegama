@@ -1,0 +1,113 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    img{
+        width: 150px;
+    }
+    ul{
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+    }
+    button{
+        display: none;
+        background-color: transparent;
+        border: 0px;
+    }
+}
+.hero{
+    background:url(../assets/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: top;
+    .hero_container{
+        padding: 50px 20px;
+        text-align: center;
+        p{
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .read{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            p{
+                background-color: rgba(0, 0, 0, 0.336);
+                padding: 10px 20px;
+                border-radius: 10px;
+                color: white;
+            }
+        }
+        img{
+            width: 80%;
+        }
+        .cta{
+            display: flex;
+            justify-content: center;
+            padding:20px;
+            gap: 20px;
+            button{
+                padding: 10px 20px;
+                border-radius: 10px;
+                font-size: 16px;
+                font-weight: 500;
+            }
+            button:hover{
+                transform: scale(1.1);
+            }
+            :nth-child(1), :nth-child(2):hover{
+                background-color: rgb(255, 255, 255);
+                color: black;
+                border: 1px solid rgb(255, 255, 255);
+            }
+            :nth-child(2), :nth-child(1):hover{
+                background-color: rgba(20, 20, 20, 0.473);
+                color: rgb(255, 255, 255);
+                border: 1px solid rgba(0, 128, 0, 0.527);
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1080px) {
+    .navbar{
+        ul{
+            display: none!important;
+        }
+        button{
+            display: block!important;
+        }
+    } 
+    .hero_container{
+        .cta{
+            padding: 50px 20px!important;
+        }
+        img{
+            width: 100%!important;
+        }
+    }
+    
+}
+//ends here
+
+
+// media query for mobile starts here
+@media (max-width: 450px) {
+     p,button{
+        font-size: 14px!important;
+     }
+     .hero_container{
+        padding: 0px 20px 50px!important;
+        .cta{
+            padding: 30px 20px!important;
+        }
+        h1{
+            font-size: 28px!important;
+        }
+    }
+}

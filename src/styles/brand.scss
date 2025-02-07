@@ -1,0 +1,44 @@
+// Brand css starts here
+.brand-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+
+.brand-image {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.brand-image:hover {
+    transform: scale(1.1);
+}
+
+//Media query for tablet starts here
+@media (max-width: 1080px) {
+    .brand-container {
+        gap: 20;
+        padding: 10px 20px 50px 20px;
+    }
+
+    .brand-image {
+        width: 100px;
+    }
+}
+//ends here
+
+
+// media query for mobile starts here
+@media (max-width: 450px) {
+    .brand-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brand-image {
+        padding-bottom: 30px;
+    }
+}
+// end

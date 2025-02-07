@@ -1,0 +1,90 @@
+.track-container {
+    display: flex;
+    padding: 50px 20px;
+    align-items: center;
+    button{
+        padding: 10px 40px;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 10px;
+        border: 0px solid white;
+        background-color: rgb(34, 34, 34);
+    }
+    button:hover{
+        border: 0px solid white;
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+}
+
+.track-container>:first-child {
+    width: 45%;
+}
+
+.track-container>:nth-child(2) {
+    width: 55%;
+}
+
+.track-image img {
+    width: 100%;
+}
+
+.track-container ul {
+    list-style-type: none;
+}
+
+.track-container li {
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    column-gap: 10px;
+    padding-bottom: 10px;
+}
+// ends here
+
+
+
+
+//Media query for tablet starts here
+@media (max-width: 1080px) {
+    .track-container {
+        flex-direction: column;
+        gap: 50px;
+        padding: 10px 10px;
+        .track-text{
+            text-align: center;
+        }
+    }
+
+    .track-container>:first-child,
+    .track-container>:nth-child(2) {
+        width: 100%;
+    }
+
+    .track-container h1,
+    .track-container p {
+        text-align: center;
+        margin: 10px
+    }
+
+    .track-container li {
+        justify-content: center;
+    }
+}
+//ends here
+
+
+// media query for mobile starts here
+@media (max-width: 450px) {
+    .track-container li {
+        font-size: 18px;
+    }
+
+    .track-container {
+        gap: 0px;
+        button{
+            margin-bottom: 30px!important ;
+        }
+    }
+}
+// ends here
