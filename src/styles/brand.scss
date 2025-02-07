@@ -33,8 +33,10 @@
 // media query for mobile starts here
 @media (max-width: 450px) {
     .brand-container {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        flex-wrap: wrap!important;
+        padding: 10px 20px 0px 20px!important;
     }
 
     .brand-image {
