@@ -18,8 +18,7 @@ export const Footer = () => {
                 <div className="footer-container">
                     <h1>
                         Manage your sales <br />
-                        and analytics at one <br />
-                        place
+                        and analytics at one place
                     </h1>
                     <div className="description">
                         <div className='socials_cont'>

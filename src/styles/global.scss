@@ -65,10 +65,10 @@ h1 {
 
 
 // media query for mobile starts here
-@media (max-width: 450px) {
+@media (max-width: 600px) {
     h1 {
-        font-size: 34px;
-        line-height: 38px;
+        font-size: 28px;
+        line-height: 40px;
     }
 
     p {

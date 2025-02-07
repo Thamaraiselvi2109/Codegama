@@ -27,7 +27,6 @@ export const Home = () =>{
         <Blogs/>
         <Faq/>
 
-
         <Footer/>
         </>
     )

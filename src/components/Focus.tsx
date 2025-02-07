@@ -24,8 +24,8 @@ export const Focus = () => {
                             <img src={creator} alt="creator view" />
                         </div>
                     ) : (
-                        <div className="end-user-view">
-                            <h2>End-User Experience</h2>
+                        <div className="creator-view">
+                            <img src={creator} alt="creator view"/>
                         </div>
                     )}
                 </div>

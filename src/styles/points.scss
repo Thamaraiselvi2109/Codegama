@@ -36,15 +36,16 @@
 
 
 // media query for mobile starts here
-@media (max-width: 450px) {
+@media (max-width: 600px) {
     .points-container{
         flex-direction: column;
-        padding: 30px 20px;
+        padding: 30px 20px 0px;
     }
     .points-container div{
         width: 100%;
         padding: 0px;
-        padding: 30px 0px;
+        padding: 25px 0px;
+        text-align: center;
     }
     .points-container div:nth-child(1), .points-container div:nth-child(2){
         border-right: 0px dotted transparent; /* Base border */

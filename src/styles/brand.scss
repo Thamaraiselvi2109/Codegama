@@ -20,7 +20,7 @@
 @media (max-width: 1080px) {
     .brand-container {
         gap: 20;
-        padding: 10px 20px 50px 20px;
+        padding: 50px 20px 50px 20px;
     }
 
     .brand-image {
@@ -31,16 +31,14 @@
 
 
 // media query for mobile starts here
-@media (max-width: 450px) {
+@media (max-width: 600px) {
     .brand-container {
         flex-direction: row;
         align-items: center;
         flex-wrap: wrap!important;
-        padding: 10px 20px 0px 20px!important;
+        gap: 10px;
+        padding: 25px 20px 25px 20px!important;
     }
 
-    .brand-image {
-        padding-bottom: 30px;
-    }
 }
 // end

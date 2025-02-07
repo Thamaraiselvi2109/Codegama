@@ -45,7 +45,7 @@ export const Faq: React.FC = () => {
                         {faqs.map((faq, index) => (
                             <div key={index} className="Accordion">
                                 <div className="title_div" onClick={() => toggleAccordion(index)}>
-                                    <span className="accor_title">{faq.question}</span>
+                                    <p className="accor_title">{faq.question}</p>
                                     <span>
                                         {openIndex === index ? (
                                             <FaAngleUp color="#7B1984" />) : (<FaAngleDown color="#7B1984" />

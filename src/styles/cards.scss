@@ -44,10 +44,17 @@
 
 
 // media query for mobile starts here
-@media (max-width: 450px) {
+@media (max-width: 600px) {
+    .cards-container{
+        padding:0px 20px 25px;
+    }
     .cards-container div{
         width: 90%;
         height: 500px;
+    }
+    .cards-title{
+        padding:25px 20px 20px 20px;
+        margin: 0px;
     }
 }
 // end

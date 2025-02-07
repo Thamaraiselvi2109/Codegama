@@ -1,5 +1,5 @@
 .testi-container {
-    padding: 100px 20px 100px 20px;
+    padding: 50px 20px 50px 20px;
     display: flex;
     justify-content: space-between;
 
@@ -22,7 +22,7 @@
 //Media query for tablet starts here
 @media (max-width: 1080px) {
     .testi-container {
-        padding: 0px 20px 70px 20px!important;
+        padding: 50px 20px 50px 20px!important;
         div {
             width: 45%;
         }
@@ -37,11 +37,11 @@
 
 
     // media query for mobile starts here
-    @media (max-width: 450px) {
+    @media (max-width: 600px) {
         .testi-container {
             flex-wrap: wrap;
             gap: 30px;
-            padding: 30px 20px 0px!important;
+            padding: 25px 20px 25px!important;
 
             div {
                 width: 90%;

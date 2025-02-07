@@ -1,5 +1,5 @@
 .focus-container{
-    padding: 50px 20px;
+    padding: 50px 20px 0px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -31,13 +31,16 @@
 
 @media (max-width: 1080px) {
     .focus-container{
-        padding: 0px 20px!important;
+        padding: 50px 20px 0px!important;
     }
 }
 
 
 // media query for mobile starts here
-@media (max-width: 450px) {
+@media (max-width: 600px) {
+    .focus-container{
+        padding: 25px 20px 0px!important;
+    }
     .toggle{
         width: 300px;
         display: flex;
