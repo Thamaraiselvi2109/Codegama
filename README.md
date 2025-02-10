@@ -59,7 +59,7 @@ A dashboard should work seamlessly across devices. Steps to achieve this include
 <li>Adaptive Navigation – Using collapsible sidebars for better usability</li></ul>
 
 <h2>Conclusion</h2><br>
-Developing a front-end for a sales and analytics dashboard involves combining modern UI design, performance optimization, and interactive elements. By choosing the right tech stack and following best practices, developers can create powerful dashboards that enhance business decision-making. Whether you’re using React, Vue, or Angular, focusing on usability and efficiency is key to success.
+Developing a front-end for a sales and analytics dashboard involves combining modern UI design, performance optimization, and interactive elements. By choosing the right tech stack and following best practices, developers can create powerful dashboards that enhance business decision-making. Whether you’re using React, Vue, or Angular, focusing on usability and efficiency is key to success.<br>
 
 Here you can Get the Deploymented Site : https://thamarai-codegama.netlify.app/
 
